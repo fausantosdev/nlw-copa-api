@@ -1,2 +1,3 @@
-# nlw-copa-api
-Backend do NLW Copa
+# NLW Copa do Mundo 2022
+
+

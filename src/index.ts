@@ -24,7 +24,7 @@ async function bootstrapp() {
         }
     })
 
-    await fastify.listen({ port: 3333 }, (err, address) => {
+    await fastify.listen({ port: 3333, host: process.env.HOST }, (err, address) => {
         if (err) throw err
     })
 }

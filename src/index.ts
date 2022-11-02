@@ -24,7 +24,10 @@ async function bootstrapp() {
         }
     })
 
-    await fastify.listen({ port: 3333 || process.env.PORT, host: process.env.HOST || '0.0.0.0' }, (err, address) => {
+    const port = parseInt(`${process.env.PORT}`) || 3333
+    const host = process.env.HOST || '0.0.0.0'
+
+    await fastify.listen({ port , host }, (err, address) => {
         if (err) throw err
     })
 }
